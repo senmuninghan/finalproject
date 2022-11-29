@@ -1,0 +1,143 @@
+.central h1{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Georgia, 'Times New Roman';
+    letter-spacing: -3px;
+    transition: 700ms ease;
+    font-variation-settings: "wght" 311;
+    margin-bottom: 0.8rem;
+    color: #00274c;
+    outline: none;
+    text-align: left;
+  }
+
+
+.union {
+    display: grid;
+    grid-template-columns: 1/3;
+    justify-items: center;
+    margin: 5px;
+    padding: 5px;
+  }
+
+
+  .union-frame {
+    padding: 3px;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #00274c;
+    color: #d9d9d9;
+  }
+
+
+  .union-img {
+    padding:4px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.25s ease-in-out;
+  }
+
+  .union-img:hover {
+    opacity: .7;
+  }
+
+  .dininghalls {
+    display: grid;
+    grid-template-columns: 1/3;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .dininghall-frame {
+    padding: 3px;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #00274c;
+    color: #d9d9d9;
+  }
+
+
+  .dininghall-img {
+    padding:2px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.25s ease-in-out;
+  }
+
+  .dininghall-img:hover {
+    opacity: .7;
+  }
+
+  .outside {
+    display: grid;
+    grid-template-columns: 1/3;
+    justify-items: center;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  .outside-frame {
+    padding: 3px;
+    font-size: 1.2rem;
+    text-align: center;
+    background-color: #00274c;
+    color: #d9d9d9;
+  }
+
+
+  .outside-img {
+    padding:2px;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    transition: opacity 0.25s ease-in-out;
+  }
+
+  .outside-img:hover {
+    opacity: .7;
+  }
+
+  @media only screen and (min-width:600px) {
+
+}
+
+@media only screen and (min-width:992px) {
+    .dininghalls {
+        grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+        margin: 5px;
+        padding: 5px;
+      }
+
+     .dininghalls :first-child {
+        font-size:20px;
+        grid-column: 1 / -1;
+      }
+
+      .union {
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+        margin: 2px;
+        padding: 2px;
+      }
+
+     .union :first-child {
+        font-size:20px;
+        grid-column: 1 / -1;
+      }
+
+      .outside {
+        grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+        margin: 2px;
+        padding: 2px;
+      }
+
+     .outside :first-child {
+        font-size:20px;
+        grid-column: 1 / -1;
+      }
+
+}

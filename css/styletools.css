@@ -1,0 +1,50 @@
+@media only screen and (min-width:600px) {
+
+}
+
+@media only screen and (min-width:992px) {
+      .tools-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .tools,.academic {
+        font-size: 25px;
+        line-height: 1;
+        text-align: center;
+        width: 3rem;
+        padding: 2rem 1rem;
+        margin: 0.375rem;
+        flex-grow: 1;
+        flex-wrap: wrap;
+      }
+
+      .tools img{
+        width:auto;
+        height:400px;
+      }
+
+      .resouce{
+        flex:0 0 cal(50%-20px);
+        font-size: 25px;
+        line-height: 1;
+        text-align: center;
+        width: 3rem;
+        padding: 2rem 1rem;
+        margin: 0.375rem;
+      }
+
+      .resource img{
+        width:auto;
+        height:400px;
+      }
+
+      .academic img{
+        width:auto;
+        height:400px;
+      }
+
+
+}

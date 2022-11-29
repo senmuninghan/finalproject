@@ -1,0 +1,25 @@
+.overview{
+    display:grid;
+    margin:20px;
+    justify-items:center;
+}
+
+@media only screen and (min-width:600px) {
+
+}
+
+@media only screen and (min-width:992px) {
+
+    .overview{
+        margin:5px;
+    }
+    .overview h2{
+        font-size:60px;
+        padding:10px;
+    }
+
+    .overview p{
+        font-size:25px;
+    }
+
+}
