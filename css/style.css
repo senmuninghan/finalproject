@@ -19,16 +19,19 @@
 
 header {
     display:grid;
-    /*background:url("../images/header1.png") no-repeat center top;*/
-    background-image: url("../images/header1.png");
-    background-position: center;
-    background-size: cover;
+    background: #00274c;
+    color:#f2f2f2;
+    font-size:50px;
+    overflow:hidden;
     text-align: center;
-    height:500px;
     align-items: center;
 }
 
 header h1{
+    padding:10px;
+    margin:15px;
+}
+/* header h1{
     display:grid;
     position:absolute;
     background: rgba(255, 255, 255, 0.75);
@@ -39,7 +42,7 @@ header h1{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-}
+} */
 
 nav{
     display:flex;
@@ -95,24 +98,48 @@ footer {
 
 @media only screen and (min-width:600px) {
     header{
-        background-image: none;
+        display:grid;
+        background-image: url("../images/header1.png");
+        background-position: center;
+        background-size: cover;
+        height:250px;
+    }
+
+    header h1{
+        display:grid;
+        position:absolute;
+        background: rgba(255, 255, 255, 0.75);
+        color: black;
+        font-size: 50px;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+
+    nav{
+        flex-direction:row;
+        position:relative;
     }
 
 }
 
 @media only screen and (min-width:992px) {
+    header {
+        text-align: center;
+        height:500px;
+        align-items: center;
+    }
+
     nav{
         display:flex;
         flex-direction:row;
+        align-items:center;
     }
 
-    header h1{
-        background: #00274c;
-        color:#f2f2f2;
+    .topnav{
+        display:flex;
+        justify-content:center;
     }
-    /* .topnav a{
-
-        position:center;
-    } */
-
 }
