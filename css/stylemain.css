@@ -4,11 +4,19 @@
     justify-items:center;
 }
 
-@media only screen and (min-width:600px) {
+.overview h2{
+    font-size:50px;
+}
+
+.overview p{
+    font-size:30px;
+}
+
+@media only screen and (min-width:768px) {
 
 }
 
-@media only screen and (min-width:992px) {
+@media only screen and (min-width:1200px) {
 
     .overview{
         margin:5px;
