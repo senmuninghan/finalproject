@@ -42,7 +42,7 @@
   }
 
 
-  .dininghalls :first-child , .union :first-child, .outside :first-child{
+  .dininghalls h2 , .union h2, .outside h2{
     font-size:40px;
     grid-column: 1 / -1;
   }
@@ -71,16 +71,16 @@
       }
 
       .dininghalls p, .union p{
-        display:grid;
+        display:inline;
         padding:0 100px 20px 100px;
         grid-column: 1 / -1;
-        font-size:20px;
+        font-size:35px;
     }
-
+/*
     .dininghalls a, .union a{
         display:inline;
         font-size:20px;
-    }
+    } */
 
     .dininghall-frame:nth-last-child(-n+2){
         display:grid;

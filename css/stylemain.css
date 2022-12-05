@@ -13,7 +13,11 @@
 }
 
 @media only screen and (min-width:768px) {
-
+    .overview p{
+        display:grid;
+        width:650px;
+        font-size:40px;
+    }
 }
 
 @media only screen and (min-width:1200px) {
@@ -27,7 +31,9 @@
     }
 
     .overview p{
-        font-size:25px;
+        display:grid;
+        width:1000px;
+        font-size:60px;
     }
 
 }
