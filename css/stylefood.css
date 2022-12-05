@@ -20,7 +20,7 @@
     padding: 5px;
   }
 
-  .dininghalls p{
+  .dininghalls p, .union p, .outside p{
       display:none;
   }
 
@@ -38,7 +38,6 @@
     margin:4px;
     max-width: 100%;
     height: auto;
-    /* object-fit: cover; */
     overflow:hidden;
   }
 
@@ -53,10 +52,6 @@
   }
 
   @media only screen and (min-width:768px) {
-    .central h1{
-        display:none;
-    }
-
     .dininghalls ,.union, .outside{
         grid-template-columns: 1fr 1fr;
         margin: 5px;
@@ -65,44 +60,30 @@
 }
 
 @media only screen and (min-width:1200px) {
-    .dininghalls {
-        grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    .central h1{
+        display:none;
+    }
+
+    .dininghalls,.union,.outside {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         margin: 5px;
         padding: 5px;
       }
 
-     .dininghalls :first-child {
-        font-size:20px;
-        grid-column: 1 / -1;
-      }
-
-      .dininghalls p{
+      .dininghalls p, .union p{
         display:grid;
         padding:0 100px 20px 100px;
         grid-column: 1 / -1;
         font-size:20px;
     }
 
-      .union {
-        grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-        margin: 2px;
-        padding: 2px;
-      }
-
-     .union :first-child {
+    .dininghalls a, .union a{
+        display:inline;
         font-size:20px;
-        grid-column: 1 / -1;
-      }
+    }
 
-      .outside {
-        grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-        margin: 2px;
-        padding: 2px;
-      }
-
-     .outside :first-child {
-        font-size:20px;
-        grid-column: 1 / -1;
-      }
+    .dininghall-frame:nth-last-child(-n+2){
+        display:grid;
+    }
 
 }

@@ -1,6 +1,5 @@
 .skip a{
     background: white;
-    /* left: 0; */
     padding: 6px;
     -webkit-transition: top 1s ease-out;
     transition: top 1s ease-out;
@@ -21,7 +20,7 @@ header {
     background: #00274c;
     color:#f2f2f2;
     font-size:50px;
-    overflow:hidden;
+    overflow:visible;
     text-align: center;
     align-items: center;
 }
@@ -30,18 +29,6 @@ header h1{
     padding:10px;
     margin:15px;
 }
-/* header h1{
-    display:grid;
-    position:absolute;
-    background: rgba(255, 255, 255, 0.75);
-    color: black;
-    font-size: 50px;
-    left: 0;
-    right: 0;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-} */
 
 nav{
     display:flex;
@@ -49,8 +36,6 @@ nav{
 }
 
 .topnav{
-    /* display:flex;
-    flex-direction:column; */
     background-color: #00274c;
     overflow:hidden;
     margin-bottom:10px;
@@ -58,8 +43,6 @@ nav{
 }
 
 .topnav a{
-   /* display:grid;
-    float:center;*/
     width:100%;
     color:#f2f2f2;
     text-align:center;
@@ -76,6 +59,7 @@ nav{
 .topnav a.current{
     background-color:#ffcb05;
     color:#111b23;
+    text-decoration:underline;
 }
 
 
