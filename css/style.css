@@ -62,6 +62,23 @@ nav{
     text-decoration:underline;
 }
 
+button{
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to right, #00274c, #ffcb05) border-box;
+    border-radius: 50em;
+    border: 4px solid transparent;
+    font-size:15px;
+}
+
+
+button:hover{
+    transform: translateY(-5px);
+}
+
+button:focus{
+    background: #00274c;
+    color:#e5e5e5;
+}
 
 footer {
     padding: 20px;
@@ -69,6 +86,7 @@ footer {
     background-color: #00274c;
     color:#e5e5e5;
   }
+
 
 
 @media only screen and (min-width:768px) {
@@ -98,6 +116,10 @@ footer {
         position:relative;
     }
 
+    button{
+        font-size:15px;
+    }
+
 }
 
 @media only screen and (min-width:1200px) {
@@ -116,5 +138,9 @@ footer {
     .topnav{
         display:flex;
         justify-content:center;
+    }
+
+    button{
+        font-size:25px;
     }
 }

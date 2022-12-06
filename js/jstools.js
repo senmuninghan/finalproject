@@ -19,3 +19,9 @@ function three(){
     resource.style.display='none';
     atlas.style.display='flex';
 }
+
+function four(){
+    bus.style.display='flex';
+    resource.style.display='none';
+    atlas.style.display='flex';
+}

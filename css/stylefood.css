@@ -41,6 +41,15 @@
     overflow:hidden;
   }
 
+  .union-frame:hover, .dininghall-frame:hover,.outside-frame:hover {
+    opacity: .7;
+  }
+
+  .union-frame:focus, .dininghall-frame:focus,.outside-frame:focus {
+  border: 2px solid #FFFFFF;
+  outline: 2px solid #000000;
+  border-radius: 0;
+  }
 
   .dininghalls h2 , .union h2, .outside h2{
     font-size:40px;
