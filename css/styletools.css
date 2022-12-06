@@ -5,19 +5,38 @@
 
   .item {
     display:flex;
+    flex-direction:row;
     order:2;
     margin-bottom:20px;
+    gap:5px;
   }
 
- .tools img, .resource img, .academic img{
+  .tools img, .resource img, .academic img{
+    max-width:100%;
+    max-height:100%;
+  }
+
+ .tools picture, .resource picture, .academic picture{
     max-width:50%;
-    max-height:50%;
+    max-height:100%;
+  }
+
+  .tools h3, .resource h3, .academic h3{
+    align-self:center;
+    text-align:center;
+    font-size:25px;
+  }
+
+  .text{
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
   }
 
   .tools p, .resource p, .academic p{
     align-self:center;
     text-align:center;
-    font-size:25px;
+    font-size:20px;
   }
 
   h2{
@@ -26,6 +45,16 @@
       padding:5px;
       font-size:50px;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .item:hover {
+    opacity: .7;
+  }
+
+  .item:focus {
+  border: 2px solid #FFFFFF;
+  outline: 2px solid #000000;
+  border-radius: 0;
   }
 
 @media only screen and (min-width:768px) {
@@ -47,6 +76,11 @@
           align-items:center;
       }
 
+      .tools picture, .resource picture, .academic picture{
+        max-width:90%;
+        max-height:90%;
+      }
+
       .tools img, .resource img, .academic img{
         max-width:90%;
         max-height:90%;
@@ -55,13 +89,12 @@
 }
 
 @media only screen and (min-width:1200px) {
-    .tools-container {
+    .tools-container{
         display: flex;
         flex-direction: row;
         flex-wrap:wrap;
         justify-content:space-evenly;
       }
-
 
       .item{
         flex:1;
@@ -77,12 +110,22 @@
         flex: 0 0 45%;
     }
 
+    .tools h3, .resource h3, .academic h3{
+        color:white;
+        font-size:40px;
+      }
+
     .tools p, .resource p, .academic p{
         align-self:center;
         text-align:center;
-        font-size:40px;
+        font-size:35px;
         color:white;
       }
 
-
+      .tools picture, .resource picture, .academic picture{
+        width: 300%;
+        height: 250%;
+        display: flex;
+        justify-content: center;
+      }
 }

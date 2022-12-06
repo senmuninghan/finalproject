@@ -22,6 +22,7 @@ function three(){
 
 function four(){
     bus.style.display='flex';
-    resource.style.display='none';
+    resource.style.display='flex';
     atlas.style.display='flex';
 }
+

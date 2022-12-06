@@ -85,11 +85,6 @@
         grid-column: 1 / -1;
         font-size:35px;
     }
-/*
-    .dininghalls a, .union a{
-        display:inline;
-        font-size:20px;
-    } */
 
     .dininghall-frame:nth-last-child(-n+2){
         display:grid;
